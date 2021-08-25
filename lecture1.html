@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(238, 232, 232);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:transparent;
+  padding: 0px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 300px; /* only for demonstration, should be removed */
+  background:transparent;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+article {
+  float: left;
+  padding:5px;
+  width: 45%;
+  background-color:transparent;
+  height: 300px; /* only for demonstration, should be removed */
+}
+figure {
+  float: left;
+  padding:0px;
+  width: 25%;
+  background-color: transparent;
+  height: 240px; /* only for demonstration, should be removed */
+}
+
+main-article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color:transparent;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+}
+.grid-item {
+  background-color:transparent;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item-small {
+  background-color:transparent;
+  padding: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+      <!--header-->
+<header>
+  <h2>Nua Bikes</h2>
+</header>
+  <!--section-->
+<section>
+  <nav>
+    <ul>
+      <li><a href="lecture1.html">Home</a></li>
+      <li><a href="lecture2.html">About</a></li>
+      <li><a href="lecture3.html">Blog</a></li>
+      <li><a href="lecture4.html">Frames&More</a></li>
+      <li><a href="lab1.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Bikes</h1>
+    <p>For those who prefer to build their own bike with their own hands, we offer our titanium frames along with advice on assembly. We are also known for making amazing custom racks for our bicycles, as well as hand-built wheels</p>
+    <p>The Nua Kensho is our sporty and sexy gearbox-equipped urban racer, made to bomb along the city streets in style.
+        It features the low maintenance of a single-speed, but sports the versatility of a sturdy Pinion gearbox paired to a Gates belt drive. 
+        To make this extravagant titanium commuter fast and light, we equipped it with a responsive yet comfortable carbon fork and a stealth-black pair of Crank brothers Cobalt wheels. 
+        </p>
+  </article>
+  <figure>
+    <img src="images/nua kensho.PNG" alt="NUA KENSHO" width="400px", height="240px">
+    <figcaption>Nua Kensho Titanium (pinion).<a href="https://www.nuabikes.com/nua-kensho-page">Nua Bikes</a></figcaption>
+  </figure>  
+  <main-article>
+    <h1>GEOMETRY & SIZES</h1>
+    <p>
+        WE BUILD BESPOKE BIKES! Currently, all our bikes are custom-made to order and ALL the frames are custom-sized to fit the owner perfectly. Even the geometry can be tuned according to rider preferences and riding style.
+       </p>
+    <p> So please don't ask us for a sizing or geometry chart. Once a deposit is paid, we will request some measurements and other information, and will work on a specific drawing for your frame/bike.</p>
+  </main-article>
+</section>
+  <!--footer-->
+<footer>
+    <div class="grid-container">
+        <div class="grid-item">Nua Bikes</div>
+        <div class="grid-item-small">Nua Bikes offers numerous models and (currently) five Pinion frames for various applications. 
+            While the Nua Dual and Nua Kensho models are designed for fast, sporty progress in urban surroundings, 
+            the Nua Roure, Nua Salvaje and Nua La Bestia are made for travel, adventure and bike packing. 
+            </div>
+        <div class="grid-item-small"><b>HEADQUARTER</b><br>+49 (0)711 217491 500<br>or info@pinion.eu</div> 
+    
+      </div>
+      
+</footer>
+
+</body>
+</html>

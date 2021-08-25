@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(238, 232, 232);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:transparent;
+  padding: 0px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 300px; /* only for demonstration, should be removed */
+  background:transparent;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+  height: 100%; /* only for demonstration, should be removed */
+}
+article h1{
+    text-align: center;
+}
+
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+}
+.grid-item {
+  background-color:transparent;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item-small {
+  background-color:transparent;
+  padding: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+      <!--header-->
+<header>
+  <h2>Nua Bikes</h2>
+</header>
+  <!--section-->
+<section>
+  <nav>
+    <ul>
+      <li><a href="lecture1.html">Home</a></li>
+      <li><a href="lecture2.html">About</a></li>
+      <li><a href="lecture3.html">Blog</a></li>
+      <li><a href="lecture4.html">Frames&More</a></li>
+      <li><a href="lab1.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About Us</h1>
+    <h2>NUA BIKES – HANDMADE IN BARCELONA</h2>
+    <h3> We give a little insight into the product range of Nua Bikes.</h3>
+    <p>In general, Nua Bikes offers numerous models and (currently) five Pinion frames for various applications. While the Nua Dual and Nua Kensho models are designed for fast, sporty progress in urban surroundings, the Nua Roure, Nua Salvaje and Nua La Bestia are made for travel, adventure and bike packing. If you don’t find what you are looking for in this basic configuration,
+         Nua Bikes offers the implementation of almost all ideas within the framework of “Customers Special Projects”…</p>
+         <h3> 1.) Special project: Kevins Porteur is based on the Roure geometry.</h3>
+         <figure>
+            <img src="images/kevins.PNG" alt="Kevins Porteur">
+            <figcaption>Kevins Porteur's Roure geometry.<a href="https://www.nuabikes.com/nua-kensho-page">Nua Bikes</a></figcaption>
+          </figure>
+          <h3> 2.) Dual Commuter – This built is equipped with a fixed mudguard and Supernova lighting for year-round use.</h3>
+         <figure>
+            <img src="images/Dual commuter.PNG" alt="Kevins Porteur">
+            <figcaption>Dual Commuter Supernova.<a href="https://www.nuabikes.com/nua-kensho-page">Nua Bikes</a></figcaption>
+          </figure>
+          <h1>WE CREATE
+            GEARBOX TECHNOLOGY
+            FOR HIGHEST DEMANDS</h1>
+            <h7>Centrally integrated into the bicycle frame, Pinion gearboxes offer unique riding dynamics and unparalleled shifting performance based on the model of sophisticated automotive transmission technology: Perfectly adapted to the intended use and permanently reliable. Virtually wear-free and without adjustment work, the transmission functions with lasting reliability even under the toughest conditions.</h7>
+  </article>
+</section>
+  <!--footer-->
+<footer>
+    <div class="grid-container">
+        <div class="grid-item">Nua Bikes</div>
+        <div class="grid-item-small">Nua Bikes offers numerous models and (currently) five Pinion frames for various applications. 
+            While the Nua Dual and Nua Kensho models are designed for fast, sporty progress in urban surroundings, 
+            the Nua Roure, Nua Salvaje and Nua La Bestia are made for travel, adventure and bike packing. 
+            </div>
+        <div class="grid-item-small"><b>HEADQUARTER</b><br>+49 (0)711 217491 500<br>or info@pinion.eu</div> 
+    
+      </div>
+      
+</footer>
+
+</body>
+</html>

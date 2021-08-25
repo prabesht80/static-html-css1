@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(238, 232, 232);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:transparent;
+  padding: 0px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 300px; /* only for demonstration, should be removed */
+  background:transparent;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+  height: 100%; /* only for demonstration, should be removed */
+}
+article h1,p{
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+}
+.grid-item {
+  background-color:transparent;
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+figcaption{
+    font-size: 15px;
+}
+.grid-item-small {
+  background-color:transparent;
+  padding: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <!--header-->
+<header>
+  <h2>Nua Bikes</h2>
+</header>
+  <!--section-->
+<section>
+  <nav>
+    <ul>
+      <li><a href="lecture1.html">Home</a></li>
+      <li><a href="lecture2.html">About</a></li>
+      <li><a href="lecture3.html">Blog</a></li>
+      <li><a href="lecture4.html">Frames&More</a></li>
+      <li><a href="lab1.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Blog</h1>
+    <p>WE STAND FOR INHOUSE
+      ENGINEERING, DESIGN AND TESTING</p>
+           <div class="grid-container">
+            <div class="grid-item">
+                <figure>
+                    <img src="images/blog_bike1.PNG" alt="Kensho">
+                    <figcaption>Kensho <a href="https://www.nuabikes.com/nua-kensho-page">Nua Bikes</a></figcaption>
+                  </figure>
+            </div>
+            <div class="grid-item"> 
+              <h5>REALLY A SPECIAL BIKE, QUITE IMPRESSIVE IN REAL LIFE<br>
+                Bespoke titanium bike with Pinion</h5>
+                </div>
+                </div>
+                <div class="grid-container">
+                  <div class="grid-item">
+                      <figure>
+                          <img src="images/blog_bike2.PNG" alt="Commuter">
+                          <figcaption>Commuter <a href="https://www.nuabikes.com/nua-kensho-page">Nua Bikes</a></figcaption>
+                        </figure>
+                  </div>
+                  <div class="grid-item"> 
+                    <h5>A TITANIUM "GRAVEL/ADVENTURE/COMMUTER" BIKE</h5>
+                      </div>
+                      </div>
+                      <div class="grid-container">
+                        <div class="grid-item">
+                            <figure>
+                                <img src="images/blog_bike3.PNG" alt="kevins">
+                                <figcaption>Kevins <a href="https://www.nuabikes.com/nua-kensho-page">Nua Bikes</a></figcaption>
+                              </figure>
+                        </div>
+                        <div class="grid-item"> 
+                          <h5>A BIKE FOR LONG HAUL BIKEPACKING</h5>
+                            </div>
+                            </div>
+             </article>
+</section>
+  <!--footer-->
+<footer>
+    <div class="grid-container">
+        <div class="grid-item">Nua Bikes</div>
+        <div class="grid-item-small">Nua Bikes offers numerous models and (currently) five Pinion frames for various applications. 
+            While the Nua Dual and Nua Kensho models are designed for fast, sporty progress in urban surroundings, 
+            the Nua Roure, Nua Salvaje and Nua La Bestia are made for travel, adventure and bike packing. 
+            </div>
+        <div class="grid-item-small"><b>HEADQUARTER</b><br>+49 (0)711 217491 500<br>or info@pinion.eu</div> 
+    
+      </div>
+      
+</footer>
+
+</body>
+</html>
